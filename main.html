@@ -16,22 +16,26 @@
 	
 <form action="/action_page.php">
 	<h3>Internship Form</h3>
-  <div class="form-group">
+  <div class="row">
+	  <div class="col">
     <label for="name">First name</label>
     <input type="name" class="form-control" id="first-name-input">
   </div>
-	<div class="form-group">
+	<div class="col">
     <label for="name">Last name</label>
     <input type="name" class="form-control" id="last-name-input">
   </div>
-	<div class="form-group">
+	  
+	<div class="col">
     <label for="email">Email Address</label>
     <input type="email" class="form-control" id="email-input">
   </div>
-  <div class="form-group">
+	  <div class="row">
+  <div class="col">
     <label for="college">College</label>
     <input type="text" class="form-control" id="college-input">
   </div>
+	  <div class="col">
 	<select class="form-select" aria-label="Default select example">
   <option selected>Graduation Year</option>
   <option value="1">2020</option>
@@ -39,7 +43,8 @@
   <option value="3">2022</option>
   <option value="4">2023</option>
 </select>
-	<div class="form-group">
+	  </div>
+	<div class="col">
     <label for="roll">Roll No.</label>
     <input type="text" class="form-control is-invalid" id="roll-no-input">
   </div>

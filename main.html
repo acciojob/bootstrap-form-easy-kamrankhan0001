@@ -14,45 +14,77 @@
     <script type="text/javascript" src="./script.js">
 </script>
 	
-<form action="/action_page.php">
-	<h3>Internship Form</h3>
-  <div class="row">
-	  <div class="col">
-    <label for="first-name-input">First Name</label>
-    <input type="text" class="form-control" id="first-name-input" required>
-  </div>
-	<div class="col">
-    <label for="last-name-input">Last Name</label>
-    <input type="text" class="form-control" id="last-name-input" required>
-  </div>
-	  
-	<div class="col">
-    <label for="email-input">Email Address</label>
-    <input type="email" class="form-control" id="email-input" required>
-  </div>
-	  <div class="row">
-  <div class="col">
-    <label for="college-input">College</label>
-    <input type="text" class="form-control" id="college-input" please provide a valid college>
-  </div>
-	  <div class="col">
-	<select class="select.form-select" aria-label="Default select example">
-  <option selected>Graduation Year</option>
-  <option value="1">2020</option>
-  <option value="2">2021</option>
-  <option value="3">2022</option>
-  <option value="4">2023</option>
-</select>
-	  </div>
-	<div class="col">
-    <label for="roll-no-input">Roll No.</label>
-    <input type="number" class="form-control" id="roll-no-input">
-  </div>
-  <div class="checkbox">
-    <label><input type="checkbox">Agree to terms and conditions</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-</body>
+<div class="container mt-5">
+        <h1 class="text-center">Internship</h1>
+        <form class="was-validated" class="row">
+            <div class="row">
+                <div class="col-4">
+                    <label for="firstname">First Name</label>
+                    <input type="text" required id="firstname" class="form-control">
+                    <div class="invalid-feedback">First name required!</div>
+                </div>
+   
+                <div class="col-4">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" required id="lastname" class="form-control">
+                    <div class="invalid-feedback">Last name required!</div>
+                </div>
+   
+                <div class="col-4">
+                    <label for="email">Email Address</label>
+                    <input type="text" required id="email" class="form-control">
+                    <div class="invalid-feedback">Email required!</div>
+                </div>
+
+
+                <div class="col-6 mt-4">
+                    <label for="college">College</label>
+                    <input type="text" required id="college" class="form-control">
+                    <div class="invalid-feedback">
+                        Please provide a valid college name.
+                    </div>
+                </div>
+
+
+                <div class="col-3 mt-4">
+                    <label for="grad">Graduation Year</label>
+                    <select id="grad" class="form-select" required>
+                        <option value="">Choose...</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid Graduation year
+                    </div>
+                </div>
+
+
+                <div class="col-3 mt-4">
+                    <label for="roll">Roll Number</label>
+                    <input type="text" id="roll" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid roll no.
+                    </div>
+                </div>
+
+
+                <div class="col-12 mt-4">
+                    <input type="checkbox" label="check" class="form-check-inline checkbox" required>
+
+
+                    <label for="check" class="checkbox-label">Agree to terms and conditions</label>
+                    <div class="invalid-feedback">You must be agree before submitting</div>
+                </div>
+
+
+                <div class="col-3 mt-4">
+                    <button class="btn btn-primary">Submit</button>
+
+
+                </div>
+            </div>
+        </form>
+    </div>
+
 
 </html>
